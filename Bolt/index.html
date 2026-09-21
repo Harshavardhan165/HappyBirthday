@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff6f91">
+<title>For Madhumitha 💗</title>
+
+<style>
+  :root{
+    --pink:#ff6f91;
+    --rose:#ff3f70;
+    --cream:#fff8f6;
+    --ink:#3b2630;
+    --glass:rgba(255,255,255,.72);
+  }
+
+  *{box-sizing:border-box}
+
+  html{scroll-behavior:smooth}
+
+  body{
+    margin:0;
+    font-family:Georgia,"Times New Roman",serif;
+    color:var(--ink);
+    background:linear-gradient(
+      180deg,
+      #fff4f7 0%,
+      #fffaf5 48%,
+      #fff0f5 100%
+    );
+    overflow-x:hidden;
+  }
+
+  .floating{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:5;
+    overflow:hidden;
+  }
+
+  .heart{
+    position:absolute;
+    bottom:-40px;
+    font-size:22px;
+    opacity:.65;
+    animation:float 9s linear infinite;
+  }
+
+  @keyframes float{
+    to{
+      transform:translateY(-110vh) rotate(18deg);
+      opacity:0;
+    }
+  }
+
+  .hero{
+    min-height:100svh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 20px;
+    position:relative;
+    overflow:hidden;
+
+    background:
+      radial-gradient(
+        circle at 20% 20%,
+        rgba(255,182,193,.45),
+        transparent 28%
+      ),
+      radial-gradient(
+        circle at 85% 35%,
+        rgba(255,214,165,.38),
+        transparent 30%
+      );
+  }
+
+  .hero-card{
+    max-width:720px;
+    position:relative;
+    z-index:2;
+  }
+
+  .eyebrow{
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-size:12px;
+    color:#b45b72;
+  }
+
+  h1{
+    font-size:clamp(48px,13vw,96px);
+    line-height:.95;
+    margin:18px 0 12px;
+    color:#d93261;
+  }
+
+  .subtitle{
+    font-size:clamp(18px,4vw,25px);
+    font-style:italic;
+    line-height:1.5;
+  }
+
+  .date{
+    display:inline-block;
+    margin:18px 0;
+    padding:9px 18px;
+    border-radius:999px;
+    background:rgba(255,255,255,.75);
+    box-shadow:0 8px 25px #e7a8b633;
+  }
+
+  .cta{
+    display:inline-block;
+    margin-top:14px;
+    padding:13px 22px;
+    border-radius:999px;
+    background:#d93261;
+    color:white;
+    text-decoration:none;
+    font-family:Arial,sans-serif;
+    font-weight:700;
+    box-shadow:0 10px 25px #d9326140;
+  }
+
+  section{
+    padding:75px 18px;
+  }
+
+  .wrap{
+    max-width:1050px;
+    margin:auto;
+  }
+
+  .section-title{
+    text-align:center;
+    font-size:clamp(30px,7vw,48px);
+    margin:0 0 12px;
+    color:#b62e55;
+  }
+
+  .section-sub{
+    text-align:center;
+    margin:0 auto 35px;
+    max-width:650px;
+    font-size:17px;
+    line-height:1.7;
+  }
+
+  .letter{
+    background:var(--glass);
+    backdrop-filter:blur(12px);
+    border:1px solid #fff;
+    border-radius:28px;
+    padding:30px;
+    box-shadow:0 18px 55px #9f4b5c1c;
+    font-size:18px;
+    line-height:1.9;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .letter:before{
+    content:"❤";
+    position:absolute;
+    right:-12px;
+    top:-24px;
+    font-size:120px;
+    color:#ffb6c633;
+  }
+
+  .gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+  }
+
+  .gallery img{
+    width:100%;
+    height:100%;
+    min-height:230px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 12px 35px #7b32421f;
+    cursor:pointer;
+    transition:.35s;
+  }
+
+  .gallery img:hover{
+    transform:translateY(-4px) scale(1.01);
+  }
+
+  .gallery .wide{
+    grid-column:span 2;
+  }
+
+  .reasons{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+  }
+
+  .reason{
+    padding:24px;
+    border-radius:22px;
+    background:#fff;
+    box-shadow:0 12px 35px #7b32421a;
+    text-align:center;
+  }
+
+  .reason b{
+    display:block;
+    font-size:22px;
+    color:#c9345d;
+    margin:8px 0;
+  }
+
+  .timeline{
+    max-width:760px;
+    margin:auto;
+  }
+
+  .moment{
+    display:flex;
+    gap:20px;
+    margin:22px 0;
+    align-items:flex-start;
+  }
+
+  .dot{
+    flex:0 0 18px;
+    height:18px;
+    border-radius:50%;
+    background:#ff6f91;
+    margin-top:8px;
+    box-shadow:0 0 0 7px #ff6f9120;
+  }
+
+  .moment h3{
+    margin:0 0 5px;
+    color:#b62e55;
+  }
+
+  .moment p{
+    margin:0;
+    line-height:1.7;
+  }
+
+  .music{
+    text-align:center;
+    background:linear-gradient(
+      135deg,
+      #fff,
+      #ffe5ed
+    );
+    border-radius:30px;
+    padding:38px 22px;
+    box-shadow:0 18px 55px #9f4b5c1c;
+  }
+
+  button{
+    border:0;
+    border-radius:999px;
+    padding:14px 22px;
+    background:#d93261;
+    color:#fff;
+    font-weight:700;
+    font-size:16px;
+    cursor:pointer;
+    box-shadow:0 10px 25px #d9326140;
+  }
+
+  .music-note{
+    font-size:50px;
+    margin-bottom:8px;
+  }
+
+  .surprise{
+    text-align:center;
+  }
+
+  .gift{
+    width:min(220px,65vw);
+    height:170px;
+    margin:25px auto;
+    position:relative;
+    cursor:pointer;
+    background:#ff7f9f;
+    border-radius:12px;
+    box-shadow:0 18px 40px #d9326140;
+  }
+
+  .gift:before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translateX(-50%);
+    width:34px;
+    height:100%;
+    background:#ffd1dc;
+  }
+
+  .gift:after{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translate(-50%,-20%);
+    width:70px;
+    height:55px;
+    border:12px solid #ffd1dc;
+    border-bottom:0;
+    border-radius:60px 60px 0 0;
+  }
+
+  .gift span{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:22px;
+    color:white;
+    font-family:Arial,sans-serif;
+    font-weight:800;
+  }
+
+  .hidden-msg{
+    display:none;
+    max-width:650px;
+    margin:20px auto;
+    padding:28px;
+    border-radius:24px;
+    background:white;
+    box-shadow:0 12px 35px #7b32421a;
+    font-size:22px;
+    line-height:1.7;
+  }
+
+  .hidden-msg.show{
+    display:block;
+    animation:pop .5s ease;
+  }
+
+  @keyframes pop{
+    from{
+      opacity:0;
+      transform:scale(.92);
+    }
+
+    to{
+      opacity:1;
+      transform:scale(1);
+    }
+  }
+
+  footer{
+    text-align:center;
+    padding:55px 20px 75px;
+    color:#9d5268;
+  }
+
+  .final{
+    font-size:clamp(30px,8vw,58px);
+    color:#d93261;
+    margin:0 0 8px;
+  }
+
+  .countdown{
+    font-family:Arial,sans-serif;
+    font-weight:700;
+    color:#b62e55;
+  }
+
+  .lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:#14090dcc;
+    z-index:20;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+  }
+
+  .lightbox.show{
+    display:flex;
+  }
+
+  .lightbox img{
+    max-width:95vw;
+    max-height:90vh;
+    border-radius:18px;
+  }
+
+  .close{
+    position:absolute;
+    right:20px;
+    top:15px;
+    color:white;
+    font-size:34px;
+    cursor:pointer;
+  }
+
+  @media(max-width:700px){
+
+    .reasons{
+      grid-template-columns:1fr;
+    }
+
+    .gallery{
+      grid-template-columns:1fr;
+    }
+
+    .gallery .wide{
+      grid-column:span 1;
+    }
+
+    .gallery img{
+      min-height:280px;
+    }
+
+    section{
+      padding:60px 15px;
+    }
+
+    .letter{
+      padding:24px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="floating" id="floating"></div>
+
+<header class="hero">
+
+  <div class="hero-card">
+
+    <div class="eyebrow">
+      A little birthday surprise for
+    </div>
+
+    <h1>
+      Madhumitha 💗
+    </h1>
+
+    <div class="subtitle">
+      To the girl who makes my world a little softer,
+      brighter and happier.
+    </div>
+
+    <div class="date">
+      🎂 23 September
+    </div>
+
+    <div>
+      <a class="cta" href="#letter">
+        Open your surprise ↓
+      </a>
+    </div>
+
+    <p class="countdown" id="countdown"></p>
+
+  </div>
+
+</header>
+
+
+<section id="letter">
+
+  <div class="wrap">
+
+    <h2 class="section-title">
+      A letter for you 💌
+    </h2>
+
+    <p class="section-sub">
+      Not every feeling fits into a message…
+      so I made you a whole little website.
+    </p>
+
+    <div class="letter">
+
+      <p>
+        My dear Madhumitha,
+      </p>
+
+      <p>
+        Happy Birthday to the person who has become such
+        a beautiful part of my life. Every photo here holds
+        a little piece of our story, and every memory makes
+        me smile.
+      </p>
+
+      <p>
+        I hope this new year of your life brings you countless
+        reasons to smile, dreams that come true, and moments
+        that you will always want to remember.
+      </p>
+
+      <p>
+        No matter how many birthdays come and go, I want to
+        keep making memories with you — one silly smile,
+        one conversation, one adventure and one beautiful
+        moment at a time.
+      </p>
+
+      <p>
+        <strong>
+          I Love You pondati 💋🫀🫅💗♾️
+        </strong>
+      </p>
+
+      <p>
+        — Yours, Harshavardhan ❤️
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="wrap">
+
+    <h2 class="section-title">
+      Our little memories 📸
+    </h2>
+
+    <p class="section-sub">
+      Six moments I wanted to keep close to this birthday surprise.
+    </p>
+
+    <div class="gallery">
+
+      <img
+        class="wide"
+        src="images/photo1.png"
+        alt="Memory 1"
+        onclick="openPhoto(this.src)"
+      >
+
+      <img
+        src="images/photo2.png"
+        alt="Memory 2"
+        onclick="openPhoto(this.src)"
+      >
+
+      <img
+        src="images/photo3.png"
+        alt="Memory 3"
+        onclick="openPhoto(this.src)"
+      >
+
+      <img
+        src="images/photo4.png"
+        alt="Memory 4"
+        onclick="openPhoto(this.src)"
+      >
+
+      <img
+        src="images/photo5.png"
+        alt="Memory 5"
+        onclick="openPhoto(this.src)"
+      >
+
+      <img
+        class="wide"
+        src="images/photo6.png"
+        alt="Memory 6"
+        onclick="openPhoto(this.src)"
+      >
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="wrap">
+
+    <h2 class="section-title">
+      Why you are special 💗
+    </h2>
+
+    <div class="reasons">
+
+      <div class="reason">
+        🌸
+        <b>Your smile</b>
+        It can turn an ordinary moment into a memory.
+      </div>
+
+      <div class="reason">
+        ✨
+        <b>Your presence</b>
+        You make even the simplest moments feel special.
+      </div>
+
+      <div class="reason">
+        🫀
+        <b>Our memories</b>
+        Every little moment together means more than you know.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="wrap">
+
+    <h2 class="section-title">
+      Our story, one moment at a time 🫶
+    </h2>
+
+    <div class="timeline">
+
+      <div class="moment">
+
+        <div class="dot"></div>
+
+        <div>
+          <h3>The beginning 🌱</h3>
+
+          <p>
+            Somewhere along the way, you became someone
+            I never wanted to lose.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="moment">
+
+        <div class="dot"></div>
+
+        <div>
+          <h3>The memories 📸</h3>
+
+          <p>
+            From peaceful smiles to rainy evenings,
+            every little moment became ours.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="moment">
+
+        <div class="dot"></div>
+
+        <div>
+          <h3>Today 💗</h3>
+
+          <p>
+            Today, I get to celebrate you — and that is
+            more than enough reason to smile.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="moment">
+
+        <div class="dot"></div>
+
+        <div>
+          <h3>More to come ♾️</h3>
+
+          <p>
+            There are still so many places to go,
+            pictures to take and memories to make.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="wrap">
+
+    <div class="music">
+
+      <div class="music-note">
+        🎵
+      </div>
+
+      <h2 class="section-title">
+        Our song
+      </h2>
+
+      <p>
+        “Un Vizhigalil” — <em>Maan Karate</em>
+      </p>
+
+      <button onclick="openSong()">
+        ▶ Play our song
+      </button>
+
+      <p style="font-size:13px;margin-top:16px;color:#8c5968">
+        The button opens the song search so you can play it
+        from your preferred music service.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="wrap surprise">
+
+    <h2 class="section-title">
+      One last surprise 🎁
+    </h2>
+
+    <p class="section-sub">
+      Tap the gift.
+    </p>
+
+    <div class="gift" onclick="reveal()">
+      <span>
+        OPEN ME 💗
+      </span>
+    </div>
+
+    <div class="hidden-msg" id="secret">
+
+      <div style="font-size:40px">
+        💋🫀🫅💗♾️
+      </div>
+
+      <p>
+        <strong>Madhumitha,</strong>
+      </p>
+
+      <p>
+        If I could give you one thing today, it would be
+        the ability to see yourself through my eyes —
+        because then you would know just how precious
+        you are to me.
+      </p>
+
+      <p>
+        <strong>
+          I Love You pondati. ❤️
+        </strong>
+      </p>
+
+      <p>
+        Happy Birthday, my love. 🎂🌸
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <p class="final">
+    Happy Birthday, Madhumitha 💗
+  </p>
+
+  <p>
+    Made with love by Harshavardhan ❤️
+  </p>
+
+  <p>
+    Forever starts with another beautiful memory. ♾️
+  </p>
+
+</footer>
+
+
+<div class="lightbox" id="lightbox" onclick="closePhoto()">
+
+  <div class="close">
+    ×
+  </div>
+
+  <img
+    id="lightboxImg"
+    src=""
+    alt="Enlarged memory"
+  >
+
+</div>
+
+
+<script>
+
+  // Floating hearts
+
+  const floating = document.getElementById('floating');
+
+  const hearts = [
+    '💗',
+    '💖',
+    '💕',
+    '🌸',
+    '✨',
+    '❤️'
+  ];
+
+  for(let i = 0; i < 18; i++){
+
+    const h = document.createElement('span');
+
+    h.className = 'heart';
+
+    h.textContent = hearts[i % hearts.length];
+
+    h.style.left =
+      (Math.random() * 100) + '%';
+
+    h.style.animationDelay =
+      (Math.random() * 8) + 's';
+
+    h.style.animationDuration =
+      (7 + Math.random() * 7) + 's';
+
+    h.style.fontSize =
+      (14 + Math.random() * 18) + 'px';
+
+    floating.appendChild(h);
+  }
+
+
+  // Birthday countdown to the next September 23.
+
+  function updateCountdown(){
+
+    const now = new Date();
+
+    let target = new Date(
+      now.getFullYear(),
+      8,
+      23,
+      0,
+      0,
+      0
+    );
+
+    if(target <= now){
+
+      target = new Date(
+        now.getFullYear() + 1,
+        8,
+        23,
+        0,
+        0,
+        0
+      );
+
+    }
+
+    const diff = target - now;
+
+    const days =
+      Math.floor(diff / 86400000);
+
+    const hours =
+      Math.floor(diff / 3600000) % 24;
+
+    const mins =
+      Math.floor(diff / 60000) % 60;
+
+    const secs =
+      Math.floor(diff / 1000) % 60;
+
+    document.getElementById('countdown').textContent =
+      `🎀 ${days}d ${hours}h ${mins}m ${secs}s until the next birthday celebration`;
+
+  }
+
+  updateCountdown();
+
+  setInterval(updateCountdown, 1000);
+
+
+  // Gift surprise
+
+  function reveal(){
+
+    document
+      .getElementById('secret')
+      .classList
+      .toggle('show');
+
+  }
+
+
+  // Open photo
+
+  function openPhoto(src){
+
+    document
+      .getElementById('lightboxImg')
+      .src = src;
+
+    document
+      .getElementById('lightbox')
+      .classList
+      .add('show');
+
+  }
+
+
+  // Close photo
+
+  function closePhoto(){
+
+    document
+      .getElementById('lightbox')
+      .classList
+      .remove('show');
+
+  }
+
+
+  // Open song search
+
+  function openSong(){
+
+    const q =
+      encodeURIComponent(
+        'Un Vizhigalil Maan Karate'
+      );
+
+    window.open(
+      'https://www.youtube.com/results?search_query=' + q,
+      '_blank'
+    );
+
+  }
+
+</script>
+
+</body>
+</html>
